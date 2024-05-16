@@ -1,0 +1,60 @@
+{
+    "Video_Game": [
+        {
+            "id": 1,
+            "prix": 49.99,
+            "name": "Assassin's Creed Valhalla",
+            "img": "assassins-creed-valhalla.jpg",
+            "category": "Action-RPG",
+            "promo": 34
+        },
+        {
+            "id": 2,
+            "prix": 59.99,
+            "name": "Cyberpunk 2077",
+            "img": "cyberpunk-2077.jpg",
+            "category": "Action-Adventure",
+            "promo": 50
+        },
+        {
+            "id": 3,
+            "prix": 39.99,
+            "name": "The Legend of Zelda: Breath of the Wild",
+            "img": "zelda-breath-of-the-wild.jpg",
+            "category": "Action-Adventure",
+            "promo": 24
+        },
+        {
+            "id": 4,
+            "prix": 59.99,
+            "name": "Elden Ring",
+            "img": "",
+            "category": "OpenWorld / Action-Adventure",
+            "promo": 34
+        },
+        {
+            "id": 5,
+            "prix": 59.99,
+            "name": "Call Of Duty - Moderne Warfare 3",
+            "img": "",
+            "category": "FPS / Multijoueur",
+            "promo": 10
+        },
+        {
+            "id": 6,
+            "prix": 59.99,
+            "name": "Doom Eternal",
+            "img":"",
+            "category": "Fast-FPS / Solo",
+            "promo": 50
+        },
+        {
+            "id": 7,
+            "prix": 29.99,
+            "name": "Mineraft",
+            "img":"",
+            "category": "FPS / Survival",
+            "promo": 12
+        }
+    ]
+}
