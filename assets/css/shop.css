@@ -1,0 +1,28 @@
+@import url('/ChallengeJS_Instant/assets/css/Accueil.css');
+
+.shop {
+    padding: 80px 20px 20px 20px;
+}
+
+.cart-empty {
+    text-align: center;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-empty p {
+    margin: 0 0 20px 0;
+}
+
+.cart-empty a {
+    color: #fff;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cart-empty a:hover {
+    background-color: darkorange;
+}

@@ -1,0 +1,37 @@
+@import url('/ChallengeJS_Instant/assets/css/Accueil.css');
+
+.login {
+    padding: 80px 20px 20px 20px;
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login form {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.login button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: darkorange;
+}
