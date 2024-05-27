@@ -8,7 +8,7 @@ app.use(cors({
     origin: '*'
 })) 
 
-const routAccueil = require("./Route/route");
+const routAccueil = require("./Route/route.js");
 
 app.use(routAccueil);
 app.listen(port, () => console.log(`listening on port  ${port}`));

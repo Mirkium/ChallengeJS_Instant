@@ -70,5 +70,20 @@
             </div>
         </section>
     </main>
+
+    <script>
+        fetch(`http://localhost:3000/Accueil`)
+        .then(response => {
+        
+        
+            return response.json()
+        })
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.log("Mec !? Tu as une erreur " + error);
+        });
+    </script>
 </body>
 </html>
