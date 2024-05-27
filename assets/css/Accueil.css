@@ -77,7 +77,9 @@ body {
 
 .games {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center; /* Centrer les éléments */
 }
 
 .game {
@@ -85,6 +87,9 @@ body {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    flex: 1 1 200px; /* Assurer que chaque carte occupe le bon espace */
+    margin: 10px; /* Ajouter de l'espacement entre les cartes */
+    max-width: 300px; /* Limiter la largeur maximale des cartes */
 }
 
 .game img {
@@ -109,4 +114,33 @@ body {
 .price {
     display: block;
     font-weight: bold;
+}
+
+.footer-content {
+    background-color: #181818;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
 }

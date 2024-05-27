@@ -68,22 +68,70 @@
                     </div>
                 </div>
             </div>
+            <div class="games">
+                <div class="game">
+                    <img src="https://via.placeholder.com/200" alt="Game Image">
+                    <div class="game-info">
+                        <span class="discount">-30%</span>
+                        <span class="title">Abiotic Factor</span>
+                        <span class="price">17.05€</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="https://via.placeholder.com/200" alt="Game Image">
+                    <div class="game-info">
+                        <span class="discount">-25%</span>
+                        <span class="title">Legacy of Castlevania</span>
+                        <span class="price">14.99€</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="https://via.placeholder.com/200" alt="Game Image">
+                    <div class="game-info">
+                        <span class="discount">-40%</span>
+                        <span class="title">Another Game</span>
+                        <span class="price">19.99€</span>
+                    </div>
+                </div>
+            </div>
+            <div class="games">
+                <div class="game">
+                    <img src="https://via.placeholder.com/200" alt="Game Image">
+                    <div class="game-info">
+                        <span class="discount">-35%</span>
+                        <span class="title">Cool Game</span>
+                        <span class="price">29.99€</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="https://via.placeholder.com/200" alt="Game Image">
+                    <div class="game-info">
+                        <span class="discount">-24%</span>
+                        <span class="title">Manor Lords</span>
+                        <span class="price">20.17€</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="https://via.placeholder.com/200" alt="Game Image">
+                    <div class="game-info">
+                        <span class="discount">-30%</span>
+                        <span class="title">Great Game</span>
+                        <span class="price">23.45€</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
-    <script>
-        fetch(`http://localhost:3000/Accueil`)
-        .then(response => {
-        
-        
-            return response.json()
-        })
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.log("Mec !? Tu as une erreur " + error);
-        });
-    </script>
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 NovaMarket - Tous droits réservés</p>
+            <nav class="footer-nav">
+                <a href="#">Conditions de vente</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Programme d'affiliation</a>
+                <a href="#">Contactez-nous</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
