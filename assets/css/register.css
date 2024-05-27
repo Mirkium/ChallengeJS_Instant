@@ -1,15 +1,15 @@
 @import url('/ChallengeJS_Instant/assets/css/Accueil.css');
 
-.login {
+.register {
     padding: 80px 20px 20px 20px;
 }
 
-.login h2 {
+.register h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.login form {
+.register form {
     max-width: 300px;
     margin: 0 auto;
     display: flex;
@@ -17,13 +17,13 @@
     gap: 10px;
 }
 
-.login input {
+.register input {
     padding: 10px;
     border-radius: 5px;
     border: none;
 }
 
-.login button {
+.register button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -32,21 +32,6 @@
     cursor: pointer;
 }
 
-.login button:hover {
+.register button:hover {
     background-color: darkorange;
-}
-
-.custom-file-upload {
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-    background-color: #282828;
-    color: #fff;
-    border-radius: 5px;
-    text-align: center;
-}
-
-#file-upload {
-    display: none;
 }

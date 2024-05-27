@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Se connecter</title>
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
 </head>
 <body>
     <header class="header">
@@ -27,25 +27,29 @@
         </div>
         <div class="icons">
             <a href="shop.html">&#128722;</a>
-            <a href="login.html" id="user-icon">&#128100;</a> 
+            <a href="login.html">&#128100;</a> 
         </div>
     </header>
     <main>
-        <section class="login">
-            <h2>Se connecter</h2>
-            <form id="login-form">
+        <section class="register">
+            <h2>S'inscrire</h2>
+            <form id="register-form">
+                <input type="text" placeholder="Nom" required>
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Mot de passe" required>
-                <label for="file-upload" class="custom-file-upload">Choisir une image</label>
-                <input id="file-upload" type="file" accept="image/*">
-                <button type="submit">Se connecter</button>
+                <button type="submit">S'inscrire</button>
             </form>
-            <p>Pas encore inscrit ? <a href="register.html">S'inscrire</a></p>
+            <p>Déjà inscrit ? <a href="login.html">Se connecter</a></p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 NovaMarket. Tous droits réservés.</p>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById('register-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'login.html'; 
+        });
+    </script>
 </body>
 </html>

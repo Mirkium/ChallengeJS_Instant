@@ -90,6 +90,11 @@ body {
     flex: 1 1 200px; /* Assurer que chaque carte occupe le bon espace */
     margin: 10px; /* Ajouter de l'espacement entre les cartes */
     max-width: 300px; /* Limiter la largeur maximale des cartes */
+    transition: transform 0.3s; /* Ajouter une transition pour l'animation */
+}
+
+.game:hover {
+    transform: scale(1.05); /* Agrandir légèrement l'image au survol */
 }
 
 .game img {
