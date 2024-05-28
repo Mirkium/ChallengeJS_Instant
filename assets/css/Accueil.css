@@ -65,13 +65,14 @@ body {
     color: orange;
 }
 
-.trends {
+.trends, .preorders, .promotions {
     padding: 20px;
     background-color: #181818;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
-.trends h2 {
+.trends h2, .preorders h2, .promotions h2 {
     margin: 0 0 20px 0;
 }
 
@@ -148,4 +149,36 @@ body {
 
 .footer-nav a:hover {
     text-decoration: underline;
+}
+
+/* Parti Responsives :  */
+@media (max-width: 1200px) {
+    .game {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .search {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .game {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav, .platforms {
+        justify-content: center;
+    }
+
+    .game {
+        flex: 1 1 calc(100% - 20px);
+    }
 }
