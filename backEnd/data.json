@@ -4,6 +4,7 @@
             "id": 1,
             "prix": 20.17,
             "name": "Manor Lords",
+            "description": "Développez votre village médiéval en une ville prospère dans ce jeu de stratégie complexe. Gérez les ressources, planifiez les constructions et défendez votre peuple contre les menaces extérieures. Transformez votre hameau en une puissante cité médiévale.",
             "img": "manor-lords-pc-jeu-steam-europe-cover.jpg",
             "category": "Strategy",
             "promo": 50
@@ -12,6 +13,7 @@
             "id": 2,
             "prix": 26.73,
             "name": "V Rising",
+            "description": "Survivez en tant que vampire dans un monde gothique riche en dangers et en mystères. Construisez votre château, chassez des créatures pour vous nourrir et étendez votre influence. Explorez un monde sombre et conquérez vos ennemis.",
             "img": "v-rising-pc-jeu-steam-cover.jpg",
             "category": "Survival",
             "promo": 24
@@ -20,6 +22,7 @@
             "id": 3,
             "prix": 45.99,
             "name": "Ghost of Tsushima: Director's Cut",
+            "description": "Explorez le Japon féodal en incarnant un samouraï dans cette aventure épique et immersive. Défendez votre île contre les envahisseurs mongols, découvrez des paysages magnifiques et engagez des combats intenses. Cette édition inclut du contenu supplémentaire et des améliorations graphiques.",
             "img": "GhostofTsushimaDirector'sCut.jpg",
             "category": "Action-Adventure",
             "promo": 23
@@ -28,6 +31,7 @@
             "id": 4,
             "prix": 27.43,
             "name": "Ready or Not",
+            "description": "Prenez part à des opérations SWAT réalistes dans ce FPS tactique intense. Planifiez chaque mission avec soin, utilisez des stratégies précises et sauvez des otages dans des environnements variés. Chaque décision compte dans ce jeu exigeant.",
             "img": "ready-or-not-pc-jeu-steam-cover.jpg",
             "category": "FPS",
             "promo": 45
@@ -36,6 +40,7 @@
             "id": 5,
             "prix": 7.89,
             "name": "Balatro",
+            "description": "Un jeu de cartes innovant avec des mécaniques stratégiques uniques. Affrontez des adversaires en ligne ou en solo, en utilisant votre deck pour déjouer leurs plans et remporter la victoire. Les choix tactiques et la chance jouent un rôle crucial.",
             "img": "balatro-pc-jeu-steam-cover.jpg",
             "category": "Card Game",
             "promo": 43
@@ -44,6 +49,7 @@
             "id": 6,
             "prix": 43.99,
             "name": "Horizon Forbidden West Complete Edition",
+            "description": "Découvrez un monde post-apocalyptique rempli de créatures robotiques et de mystères. Incarnez Aloy et explorez des terres inconnues, combattez des ennemis redoutables et découvrez des secrets anciens. Cette édition complète inclut du contenu supplémentaire.",
             "img": "horizon-forbidden-west-complete-edition-complete-edition-pc-jeu-steam-europe-cover.jpg",
             "category": "Action-Adventure",
             "promo": 27
@@ -52,6 +58,7 @@
             "id": 7,
             "prix": 33.33,
             "name": "Sekiro: Shadows Die Twice - GOTY Edition",
+            "description": "Un jeu d'action exigeant se déroulant dans un Japon fantastique et brutal. Maîtrisez l'art du combat et affrontez des ennemis redoutables dans des batailles épiques. Cette édition comprend des mises à jour et du contenu supplémentaire.",
             "img": "sekiro-shadows-die-twice-goty-edition-goty-edition-pc-jeu-steam-europe-cover.jpg",
             "category": "Action-Adventure",
             "promo": 44
@@ -60,6 +67,7 @@
             "id": 8,
             "prix": 2.49,
             "name": "Buckshot Roulette",
+            "description": "Un FPS rapide et innovant avec des défis uniques. Affrontez des ennemis variés dans des environnements diversifiés en utilisant une variété d'armes et de stratégies. La rapidité et la précision sont essentielles pour survivre.",
             "img": "buckshot-roulette-pc-jeu-steam-cover.jpg",
             "category": "FPS",
             "promo": 17
@@ -68,6 +76,7 @@
             "id": 9,
             "prix": 42.89,
             "name": "Helldivers 2 Super Citizen Edition",
+            "description": "Protégez la Super Terre contre des invasions extraterrestres dans ce jeu de tir coopératif. Coopérez avec d'autres joueurs pour des missions tactiques intenses et stratégiques. Cette édition spéciale offre des bonus exclusifs pour enrichir votre expérience.",
             "img": "helldivers-2-super-citizen-edition-super-citizen-edition-pc-jeu-steam-europe-cover.jpg",
             "category": "Action",
             "promo": 29
@@ -76,6 +85,7 @@
             "id": 10,
             "prix": 30.89,
             "name": "Elden Ring - L'ombre de l'Arbre-monde",
+            "description": "Plongez dans un monde fantastique riche et détaillé, créé par FromSoftware et George R. R. Martin. Explorez des paysages majestueux, combattez des ennemis redoutables et découvrez des secrets anciens. Chaque décision impacte votre quête dans ce RPG épique.",
             "img": "elden-ring-l-ombre-de-l-arbre-monde-pc-jeu-steam-europe-cover.jpg",
             "category": "RPG",
             "promo": 23
@@ -84,6 +94,7 @@
             "id": 11,
             "prix": 46.99,
             "name": "Warhammer 40,000: Space Marine 2",
+            "description": "Combattez des hordes d'ennemis dans l'univers sombre et brutal de Warhammer 40,000. Utilisez des armes puissantes et des stratégies militaires dans des batailles épiques. Vivez une aventure pleine d'action et de défis intenses.",
             "img": "warhammer-40-000-space-marine-2-pc-jeu-steam-cover.jpg",
             "category": "Action",
             "promo": 22
@@ -92,6 +103,7 @@
             "id": 12,
             "prix": 29.99,
             "name": "F1 Manager 2024 Deluxe Edition",
+            "description": "Gérez votre propre équipe de Formule 1 et prenez des décisions stratégiques cruciales. Optimisez les performances de vos pilotes et dominez les circuits du monde entier. Cette édition deluxe inclut des fonctionnalités et du contenu supplémentaires.",
             "img": "f1-manager-2024-deluxe-edition-deluxe-edition-pc-jeu-steam-europe-cover.jpg",
             "category": "Simulation",
             "promo": 33
@@ -100,6 +112,7 @@
             "id": 13,
             "prix": 32.99,
             "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+            "description": "Explorez une zone de Tchernobyl remplie de dangers et de mystères dans ce FPS d'horreur de survie. Combattez des créatures mutantes et découvrez des secrets cachés dans un monde post-apocalyptique. Un jeu captivant qui mettra vos nerfs à l'épreuve.",
             "img": "s-t-a-l-k-e-r-2-heart-of-chornobyl-pc-jeu-steam-europe-cover.jpg",
             "category": "FPS",
             "promo": 45
@@ -108,6 +121,7 @@
             "id": 14,
             "prix": 48.99,
             "name": "Assassin's Creed Shadows",
+            "description": "Plongez dans un cadre historique fascinant et vivez une aventure d'action furtive. Explorez des environnements détaillés, accomplissez des missions périlleuses et découvrez une histoire riche en rebondissements. La discrétion et la stratégie sont essentielles.",
             "img": "assassin-s-creed-shadows-pc-jeu-ubisoft-connect-cover.jpg",
             "category": "Action-Adventure",
             "promo": 20
@@ -116,6 +130,7 @@
             "id": 15,
             "prix": 56.24,
             "name": "Final Fantasy VII Rebirth",
+            "description": "Revivez l'aventure épique de Cloud et de ses compagnons dans ce RPG modernisé. Explorez un monde fantastique rempli de mystères et de dangers. Cette version propose des quêtes supplémentaires, des personnages emblématiques et des défis uniques.",
             "img": "final-fantasy-vii-rebirth-pc-jeu-steam-cover.jpg",
             "category": "RPG",
             "promo": 26
@@ -124,6 +139,7 @@
             "id": 16,
             "prix": 45.99,
             "name": "Silent Hill 2",
+            "description": "Un jeu d'horreur psychologique intense explorant des thèmes profonds et troublants. Incarnez James Sunderland et découvrez les sombres secrets de Silent Hill. Une atmosphère oppressante et des énigmes complexes vous attendent.",
             "img": "silent-hill-2-pc-jeu-steam-cover.jpg",
             "category": "Horror",
             "promo": 31
@@ -132,6 +148,7 @@
             "id": 17,
             "prix": 34.90,
             "name": "Tekken 8",
+            "description": "Découvrez le dernier opus de la célèbre série de jeux de combat. Affrontez des adversaires redoutables avec des techniques de combat améliorées et des graphismes époustouflants. Chaque combat est une véritable épreuve de force et de stratégie.",
             "img": "tekken-8-pc-jeu-steam-cover.jpg",
             "category": "Fighting",
             "promo": 50
@@ -140,6 +157,7 @@
             "id": 18,
             "prix": 14.99,
             "name": "Star Wars Outlaws",
+            "description": "Plongez dans l'univers de Star Wars avec une action palpitante et des combats intenses. Incarnez un hors-la-loi et explorez des planètes exotiques tout en combattant l'Empire. Vivez des aventures épiques dans une galaxie lointaine, très lointaine.",
             "img": "star-wars-outlaws-pc-jeu-cover.jpg",
             "category": "Action",
             "promo": 40
@@ -148,6 +166,7 @@
             "id": 19,
             "prix": 15.89,
             "name": "Pacific Drive",
+            "description": "Offrez-vous une aventure atmosphérique de conduite dans le mystérieux nord-ouest du Pacifique. Explorez des routes sinueuses, résolvez des énigmes et survivez à des dangers inconnus. Une expérience unique et immersive vous attend.",
             "img": "pacific-drive-pc-jeu-steam-europe-cover.jpg",
             "category": "Adventure",
             "promo": 47
@@ -156,6 +175,7 @@
             "id": 20,
             "prix": 21.01,
             "name": "Nightingale",
+            "description": "Plongez dans un monde magique et mystérieux où la survie est essentielle. Explorez des terres enchantées, combattez des créatures fantastiques et construisez des refuges pour vous protéger. Chaque jour apporte de nouveaux défis et découvertes.",
             "img": "nightingale-pc-jeu-steam-cover.jpg",
             "category": "Survival",
             "promo": 28
@@ -164,6 +184,7 @@
             "id": 21,
             "prix": 36.99,
             "name": "Senua's Saga: Hellblade II",
+            "description": "Suivez l'aventure de Senua dans une quête personnelle et intense. Explorez des environnements sombres, combattez des ennemis redoutables et découvrez une histoire captivante. Un jeu d'action immersif qui combine narration profonde et combats intenses.",
             "img": "senua-s-saga-hellblade-ii-pc-xbox-series-x-s-xbox-series-x-s-pc-jeu-microsoft-store-cover.jpg",
             "category": "Action",
             "promo": 26
@@ -172,6 +193,7 @@
             "id": 22,
             "prix": 18.99,
             "name": "Serum",
+            "description": "Un jeu d'horreur captivant qui vous plonge dans un monde sombre et inquiétant. Incarnez un personnage confronté à des expériences terrifiantes et résolvez des énigmes pour survivre. Une expérience inoubliable pour les amateurs de frissons.",
             "img": "serum-pc-jeu-steam-cover.jpg",
             "category": "Horror",
             "promo": 24
@@ -180,6 +202,7 @@
             "id": 23,
             "prix": 16.99,
             "name": "Die by the Blade",
+            "description": "Un jeu de combat unique où chaque coup peut être fatal. Maîtrisez une variété d'armes et de techniques pour affronter vos ennemis dans des duels intenses. La précision et la stratégie sont essentielles pour survivre.",
             "img": "die-by-the-blade-pc-jeu-steam-cover.jpg",
             "category": "Fighting",
             "promo": 45
@@ -188,6 +211,7 @@
             "id": 24,
             "prix": 24.99,
             "name": "Arctic Eggs",
+            "description": "Un jeu de puzzle captivant où vous devez résoudre des énigmes glacées. Utilisez votre logique et votre créativité pour progresser à travers des niveaux de plus en plus complexes. Une aventure rafraîchissante et stimulante.",
             "img": "arctic-eggs-pc-jeu-steam-cover.jpg",
             "category": "Puzzle",
             "promo": 20
@@ -196,6 +220,7 @@
             "id": 25,
             "prix": 13.89,
             "name": "Morbid: The Lords of Ire",
+            "description": "Un jeu d'horreur intense avec une atmosphère sombre et oppressante. Explorez des environnements sinistres, combattez des monstres terrifiants et découvrez des secrets macabres. Une expérience terrifiante pour les amateurs d'horreur.",
             "img": "morbid-the-lords-of-ire-pc-jeu-steam-cover.jpg",
             "category": "Horror",
             "promo": 43
@@ -204,6 +229,7 @@
             "id": 26,
             "prix": 29.99,
             "name": "Selaco",
+            "description": "Un FPS dynamique avec une intrigue captivante et des combats intenses. Explorez des environnements détaillés, affrontez des ennemis variés et utilisez une variété d'armes puissantes. Un jeu d'action palpitant pour les amateurs de FPS.",
             "img": "selaco-pc-jeu-steam-cover.jpg",
             "category": "FPS",
             "promo": 25
@@ -212,9 +238,172 @@
             "id": 27,
             "prix": 18.99,
             "name": "Soulmask",
+            "description": "Un RPG captivant avec une histoire riche et des personnages fascinants. Explorez des mondes fantastiques, combattez des créatures redoutables et développez vos compétences. Une aventure épique vous attend.",
             "img": "soulmask-pc-jeu-steam-cover.jpg",
             "category": "RPG",
             "promo": 40
+        },
+        {
+            "id": 28,
+            "prix": 19.99,
+            "name": "Darkest Dungeon II (PS4 / PS5)",
+            "description": "Plongez dans un RPG tactique et sombre où chaque décision compte. Affrontez des monstres terrifiants, gérez le stress de vos héros et explorez des donjons mortels. Une suite captivante et exigeante du jeu acclamé.",
+            "img": "darkest-dungeon-ii-ps4-ps5-playstation-5-playstation-4-jeu-playstation-store-cover.jpg",
+            "category": "RPG",
+            "promo": 45
+        },
+        {
+            "id": 29,
+            "prix": 29.99,
+            "name": "DreadOut Remastered Collection PS5",
+            "description": "Un jeu d'horreur où vous explorez des lieux hantés et affrontez des esprits maléfiques. Utilisez votre caméra pour révéler les secrets cachés et survivre aux terreurs qui vous entourent. Une expérience terrifiante pour les fans d'horreur.",
+            "img": "dreadout-remastered-collection-ps5-remastered-collection-playstation-5-jeu-playstation-store-cover.jpg",
+            "category": "Horror",
+            "promo": 45
+        },
+        {
+            "id": 30,
+            "prix": 39.99,
+            "name": "Final Fantasy XIV Online Starter Edition (PS4 / PS5)",
+            "description": "Plongez dans le monde de Final Fantasy XIV avec cette édition de démarrage. Explorez des terres fantastiques, accomplissez des quêtes épiques et combattez aux côtés d'autres joueurs. Un MMORPG riche et immersif.",
+            "img": "final-fantasy-xiv-online-starter-edition-ps4-ps5-starter-edition-playstation-4-playstation-5-jeu-playstation-store-europe-cover.jpg",
+            "category": "MMORPG",
+            "promo": 25
+        },
+        {
+            "id": 31,
+            "prix": 49.99,
+            "name": "Predator: Hunting Grounds PS5",
+            "description": "Un jeu d'action intense où vous pouvez incarner le Predator ou un soldat d'élite. Chassez ou soyez chassé dans des environnements variés et remplis de dangers. La stratégie et la survie sont essentielles pour remporter la victoire.",
+            "img": "predator-hunting-grounds-ps5-playstation-5-jeu-playstation-store-cover.jpg",
+            "category": "Action",
+            "promo": 42
+        },
+        {
+            "id": 32,
+            "prix": 59.99,
+            "name": "Resistance: Retribution (PS4 / PS5)",
+            "description": "Un jeu d'action palpitant dans un monde dystopique où vous devez lutter contre une invasion extraterrestre. Utilisez des armes futuristes et des stratégies de combat avancées pour survivre et sauver l'humanité. Une expérience intense et immersive.",
+            "img": "resistance-retribution-ps4-ps5-playstation-5-playstation-4-jeu-playstation-store-cover.jpg",
+            "category": "Action",
+            "promo": 18
+        },
+        {
+            "id": 33,
+            "prix": 69.99,
+            "name": "Hauntii (PS4 / PS5)",
+            "description": "Explorez un monde mystérieux et fantastique rempli de défis et de mystères. Utilisez vos compétences pour résoudre des énigmes et vaincre des ennemis redoutables. Une aventure captivante qui vous tiendra en haleine du début à la fin.",
+            "img": "hauntii-ps4-ps5-playstation-4-playstation-5-jeu-playstation-store-cover.jpg",
+            "category": "Adventure",
+            "promo": 75
+        },
+        {
+            "id": 34,
+            "prix": 79.99,
+            "name": "Worshippers of Cthulhu PS5",
+            "description": "Un jeu d'horreur inspiré par l'univers de H.P. Lovecraft, où vous devez affronter des créatures terrifiantes et des mystères insondables. Utilisez votre intelligence et vos ressources pour survivre aux horreurs qui vous entourent. Une expérience d'horreur immersive et effrayante.",
+            "img": "worshippers-of-cthulhu-ps5-playstation-5-jeu-playstation-store-cover.jpg",
+            "category": "Horror",
+            "promo": 32
+        },
+        {
+            "id": 35,
+            "prix": 89.99,
+            "name": "Stasis: Bone Totem (PS4 / PS5)",
+            "description": "Un jeu d'aventure captivant avec une intrigue complexe et des personnages fascinants. Explorez des environnements détaillés, résolvez des énigmes et découvrez des secrets cachés. Une expérience immersive qui vous tiendra en haleine.",
+            "img": "stasis-bone-totem-ps4-ps5-playstation-4-playstation-5-jeu-playstation-store-cover.jpg",
+            "category": "Adventure",
+            "promo": 13
+        },
+        {
+            "id": 36,
+            "prix": 99.99,
+            "name": "Resident Evil Village (PS4 / PS5)",
+            "description": "Plongez dans un jeu d'horreur de survie intense où vous devez affronter des créatures terrifiantes et résoudre des énigmes complexes. Explorez un village mystérieux et découvrez des secrets sombres. Une expérience d'horreur palpitante et immersive.",
+            "img": "resident-evil-village-ps4-ps5-playstation-5-playstation-4-jeu-playstation-store-cover.jpg",
+            "category": "Horror",
+            "promo": 56
+        },
+        {
+            "id": 37,
+            "prix": 19.99,
+            "name": "System Shock (Xbox One / Xbox Series X|S)",
+            "description": "Un jeu d'action et de science-fiction où vous devez survivre dans une station spatiale envahie par des ennemis cybernétiques. Utilisez des armes futuristes et des compétences de piratage pour vaincre vos adversaires. Une expérience intense et immersive.",
+            "img": "system-shock-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-jeu-microsoft-store-cover.jpg",
+            "category": "Action",
+            "promo": 29
+        },
+        {
+            "id": 38,
+            "prix": 29.99,
+            "name": "Fallout 76 (Xbox ONE / Xbox Series X|S)",
+            "description": "Explorez un monde post-apocalyptique rempli de dangers, de créatures mutantes et de mystères. Rejoignez d'autres joueurs pour accomplir des quêtes, construire des abris et survivre dans un environnement hostile. Une aventure en ligne immersive et captivante.",
+            "img": "fallout-76-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg",
+            "category": "RPG",
+            "promo": 57
+        },
+        {
+            "id": 39,
+            "prix": 39.99,
+            "name": "Forza Horizon 4 (PC / Xbox ONE / Xbox Series X|S)",
+            "description": "Plongez dans un monde ouvert de course automobile avec des paysages magnifiques et une variété de véhicules. Participez à des courses palpitantes, explorez des routes pittoresques et personnalisez vos voitures. Une expérience de conduite immersive et excitante.",
+            "img": "forza-horizon-4-pc-xbox-one-xbox-series-x-s-pc-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg",
+            "category": "Racing",
+            "promo": 41
+        },
+        {
+            "id": 40,
+            "prix": 49.99,
+            "name": "Elden Ring (Xbox ONE / Xbox Series X|S)",
+            "description": "Plongez dans un monde fantastique riche et détaillé, créé par FromSoftware et George R. R. Martin. Explorez des paysages majestueux, combattez des ennemis redoutables et découvrez des secrets anciens. Chaque décision impacte votre quête dans ce RPG épique.",
+            "img": "elden-ring-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg",
+            "category": "RPG",
+            "promo": 49
+        },
+        {
+            "id": 41,
+            "prix": 59.99,
+            "name": "Dead by Daylight (Xbox ONE / Xbox Series X|S)",
+            "description": "Un jeu d'horreur multijoueur où vous pouvez incarner un tueur ou un survivant. Coopérez avec d'autres joueurs pour échapper au tueur ou traquez vos proies. Chaque partie est une lutte pour la survie dans un environnement terrifiant.",
+            "img": "dead-by-daylight-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg",
+            "category": "Horror",
+            "promo": 52
+        },
+        {
+            "id": 42,
+            "prix": 69.99,
+            "name": "The Elder Scrolls V: Skyrim Special Edition (Xbox ONE / Xbox Series X|S)",
+            "description": "Explorez le vaste monde de Skyrim dans cette édition spéciale remastérisée. Affrontez des dragons, accomplissez des quêtes épiques et découvrez des trésors cachés. Une aventure RPG immersive avec des graphismes améliorés et du nouveau contenu.",
+            "img": "the-elder-scrolls-v-skyrim-special-edition-xbox-one-xbox-series-x-s-special-edition-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg",
+            "category": "RPG",
+            "promo": 37
+        },
+        {
+            "id": 43,
+            "prix": 79.99,
+            "name": "Cyberpunk 2077 (Xbox ONE / Xbox Series X|S)",
+            "description": "Plongez dans un monde futuriste et dystopique où la technologie et le chaos règnent en maître. Incarnez un mercenaire dans la ville de Night City, accomplissez des missions variées et façonnez votre propre destin. Un RPG immersif avec une histoire riche et des personnages fascinants.",
+            "img": "cyberpunk-2077-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg",
+            "category": "RPG",
+            "promo": 56
+        },
+        {
+            "id": 44,
+            "prix": 89.99,
+            "name": "Halo Wars 2 (PC / Xbox ONE / Xbox Series X|S)",
+            "description": "Participez à des batailles stratégiques intenses dans l'univers de Halo. Commandez vos troupes, développez des stratégies complexes et combattez des ennemis redoutables. Une expérience de stratégie en temps réel immersive avec des graphismes améliorés.",
+            "img": "halo-wars-2-pc-xbox-one-xbox-series-x-s-pc-xbox-one-xbox-series-x-s-jeu-microsoft-store-cover.jpg",
+            "category": "Strategy",
+            "promo": 26
+        },
+        {
+            "id": 45,
+            "prix": 99.99,
+            "name": "State of Decay 2: Juggernaut Edition (PC / Xbox ONE / Xbox Series X|S)",
+            "description": "Un jeu de survie intense où vous devez gérer une communauté de survivants dans un monde post-apocalyptique. Explorez, récupérez des ressources et combattez des hordes de zombies pour assurer la survie de votre groupe. Cette édition comprend du contenu supplémentaire et des améliorations graphiques.",
+            "img": "state-of-decay-2-juggernaut-edition-pc-xbox-one-xbox-series-x-s-juggernaut-edition-pc-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg",
+            "category": "Survival",
+            "promo": 39
         }
     ]
 }
