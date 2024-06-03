@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= game.name %></title>
+  <link rel="stylesheet" href="/css/jeu.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">NovaMarket</div>
+    <nav class="nav">
+      <a href="/">Accueil</a>
+      <a href="/#trends">Tendances</a>
+      <a href="/#preorders">Précommandes</a>
+      <a href="/#promotions">Promotions</a>
+      <a href="/template/support.html">Support 24/7</a>
+    </nav>
+  </header>
+  <main>
+    <section class="game-details">
+      <h1><%= game.name %></h1>
+      <div class="game-info">
+        <img src="/img/<%= game.img %>" alt="<%= game.name %>">
+        <div class="details">
+          <p><%= game.description %></p>
+          <p>Prix : <%= game.prix %>€</p>
+          <p>Catégorie : <%= game.category %></p>
+          <p>Promotion : -<%= game.promo %>%</p>
+        </div>
+      </div>
+    </section>
+    <section class="game-config">
+      <h2>Configurations requises</h2>
+      <div class="config">
+        <div class="config-min">
+          <h3>Minimale</h3>
+          <ul>
+            <% Object.keys(game.config.minimale).forEach(key => { %>
+              <li><%= key %> : <%= game.config.minimale[key] %></li>
+            <% }); %>
+          </ul>
+        </div>
+        <div class="config-rec">
+          <h3>Recommandée</h3>
+          <ul>
+            <% Object.keys(game.config.recommandée).forEach(key => { %>
+              <li><%= key %> : <%= game.config.recommandée[key] %></li>
+            <% }); %>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 NovaMarket - Tous droits réservés</p>
+      <nav class="footer-nav">
+        <a href="/template/conditions-de-vente.html">Conditions de vente</a>
+        <a href="/template/politique-de-confidentialite.html">Politique de confidentialité</a>
+        <a href="/template/programme-affiliation.html">Programme d'affiliation</a>
+        <a href="/template/contactez-nous.html">Contactez-nous</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

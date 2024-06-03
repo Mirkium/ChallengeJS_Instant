@@ -1,14 +1,32 @@
 {
     "Video_Game": [
-        {
-            "id": 1,
-            "prix": 20.17,
-            "name": "Manor Lords",
-            "description": "Développez votre village médiéval en une ville prospère dans ce jeu de stratégie complexe. Gérez les ressources, planifiez les constructions et défendez votre peuple contre les menaces extérieures. Transformez votre hameau en une puissante cité médiévale.",
-            "img": "manor-lords-pc-jeu-steam-europe-cover.jpg",
-            "category": "Strategy",
-            "promo": 50
-        },
+      {
+        "id": 1,
+        "prix": 20.17,
+        "name": "Manor Lords",
+        "description": "Développez votre village médiéval en une ville prospère dans ce jeu de stratégie complexe.",
+        "img": "manor-lords-pc-jeu-steam-europe-cover.jpg",
+        "category": "Strategy",
+        "promo": 50,
+        "config": {
+          "minimale": {
+            "OS": "Windows 10 64-bit",
+            "Processor": "Intel Core i3-7100 or AMD Ryzen 3 1200",
+            "Memory": "8 GB RAM",
+            "Graphics": "NVIDIA GeForce GTX 960 or AMD Radeon RX 5500 XT",
+            "Storage": "75 GB available space",
+            "Additional Notes": "SSD Recommended"
+          },
+          "recommandée": {
+            "OS": "Windows 10 64-bit",
+            "Processor": "Intel Core i5-8600 or AMD Ryzen 5 3600",
+            "Memory": "16 GB RAM",
+            "Graphics": "NVIDIA GeForce RTX 2060 or AMD Radeon RX 5600 XT",
+            "Storage": "75 GB available space",
+            "Additional Notes": "SSD Required"
+          }
+        }
+      },
         {
             "id": 2,
             "prix": 26.73,

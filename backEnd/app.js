@@ -1,14 +1,34 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const fs = require('fs');
 
-const cors = require('cors');
+// Middleware pour servir les fichiers statiques
+app.use(express.static('assets'));
 
-app.use(cors({
-    origin: '*'
-})) 
+// Définir EJS comme moteur de template
+app.set('view engine', 'ejs');
 
-const routAccueil = require("./Route/route.js");
+// Charger les données depuis le fichier JSON
+const gamesData = JSON.parse(fs.readFileSync('data.json', 'utf-8'));
 
-app.use(routAccueil);
-app.listen(port, () => console.log(`listening on port  ${port}`));
+// Route pour la page d'accueil
+app.get('/', (req, res) => {
+  res.render('Accueil', { games: gamesData.Video_Game });
+});
+
+// Route pour les pages des jeux
+app.get('/jeux/:id', (req, res) => {
+  const gameId = parseInt(req.params.id, 10);
+  const game = gamesData.Video_Game.find(g => g.id === gameId);
+  if (game) {
+    res.render('jeu', { game });
+  } else {
+    res.status(404).render('404');
+  }
+});
+
+// Démarrer le serveur
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
