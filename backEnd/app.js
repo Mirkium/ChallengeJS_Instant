@@ -1,3 +1,6 @@
+
+            // Ceci est un exemple !!!!! 
+
 const express = require('express');
 const app = express();
 const fs = require('fs');
@@ -13,7 +16,7 @@ const gamesData = JSON.parse(fs.readFileSync('data.json', 'utf-8'));
 
 // Route pour la page d'accueil
 app.get('/', (req, res) => {
-  res.render('Accueil', { games: gamesData.Video_Game });
+  res.render('accueil', { games: gamesData.Video_Game });
 });
 
 // Route pour les pages des jeux
