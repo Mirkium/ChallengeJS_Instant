@@ -4,6 +4,7 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
+const conect = require('./config');
 
 // Middleware pour servir les fichiers statiques
 app.use(express.static('assets'));
