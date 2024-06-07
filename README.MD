@@ -37,10 +37,6 @@ ChallengeJS_Instant/
 
 
 
-
-
-
-
 # NovaMarket - Site de E-Commerce pour Jeux Vidéo
 
 NovaMarket est un site de e-commerce pour les jeux vidéo, offrant une plateforme pour parcourir et acheter une variété de jeux. Ce projet utilise Express.js pour le serveur backend et EJS pour le rendu des pages dynamiques.
@@ -49,12 +45,16 @@ NovaMarket est un site de e-commerce pour les jeux vidéo, offrant une plateform
 
 Assurez-vous d'avoir Node.js installé sur votre machine. Ensuite, suivez les étapes ci-dessous pour installer les dépendances nécessaires et exécuter le projet.
 - npm install ejs
+- npm install --save-dev nodemon
+- npm start
+- npm install express
+- Serveur Running on port 3000
+
 
 ### Étapes d'Installation
 
 1. **Cloner le Répertoire**
-
-   ```bash
+  
+bash
    git clone https://github.com/votre-repertoire/novamarket.git
    cd novamarket
-
