@@ -9,12 +9,14 @@ const config_SQL = {
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    PORT: process.env.DB_PORT,
+    //PORT: process.env.DB_PORT,
     connectionLimit: 10
 }
 
 const Connection_DB = MySQL.createConnection(config_SQL);
 
-Connection_DB.connect()
+Connection_DB.connect(() => {
+    console.log("a")
+})
 
 module.exports = Connection_DB;

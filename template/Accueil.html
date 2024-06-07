@@ -286,6 +286,14 @@
             </nav>
         </div>
     </footer>
-    <script src="../assets/js/script.js"></script>
+    <script>
+        fetch(`http://localhost:3000/accueil`)
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            console.log(data)
+        })
+    </script>
 </body>
 </html>
