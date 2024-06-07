@@ -6,6 +6,7 @@ const routes = require('./routes/route.js');
 
 // Middleware pour servir les fichiers statiques
 app.use(express.static(path.join(__dirname, '../assets')));
+app.use(express.static(path.join(__dirname, '../template')));
 
 // Définir EJS comme moteur de template
 app.set('view engine', 'ejs');
