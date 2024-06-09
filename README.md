@@ -14,7 +14,7 @@ ChallengeJS_Instant
 │   │   ├── productReviewController.js
 │   │   └── userController.js
 │   ├── data
-│   │   └── boutique_bun.sql
+│   │   └── boutique_novamarket.sql
 │   ├── models
 │   │   ├── categoryModel.js
 │   │   ├── discountModel.js
