@@ -9,7 +9,7 @@ const config_SQL = {
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    //PORT: process.env.DB_PORT,
+    port: process.env.DB_PORT, //J'ai modifier cette ligne au lieu du commentaire je les directement mis = PORT: process.env.DB_PORT, 
     connectionLimit: 10
 }
 
