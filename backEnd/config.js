@@ -15,8 +15,12 @@ const config_SQL = {
 
 const Connection_DB = MySQL.createConnection(config_SQL);
 
-Connection_DB.connect(() => {
-    console.log("a")
+Connection_DB.connect((err) => {
+    if (err) {
+        console.error('Erreur de connexion à la base de données:', err);
+        return;
+    }
+    console.log('Connecté à la base de données MySQL');
 })
 
 module.exports = Connection_DB;

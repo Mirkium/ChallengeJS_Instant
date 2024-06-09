@@ -1,6 +1,10 @@
-CREATE TABLE video_games (
+CREATE DATABASE IF NOT EXISTS EShop;
+
+USE EShop;
+
+CREATE TABLE IF NOT EXISTS video_games (
     id INT PRIMARY KEY,
-    prix DECIMAL(10,2),
+    prix DECIMAL(10, 2),
     name VARCHAR(255),
     description TEXT,
     img VARCHAR(255),
@@ -8,12 +12,21 @@ CREATE TABLE video_games (
     promo INT
 );
 
-CREATE TABLE users (
-    id INT PRIMARY KEY,
-    Pseudo TEXT,
-    Password VARCHAR(255),
-    PanierObjectId INT
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pseudo VARCHAR(255),
+    password VARCHAR(255)
 );
+
+CREATE TABLE IF NOT EXISTS cart (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    product_id INT,
+    quantity INT,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (product_id) REFERENCES video_games(id)
+);
+
 
 INSERT INTO video_games (id, prix, name, description, img, category, promo)
 VALUES

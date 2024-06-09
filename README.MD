@@ -1,40 +1,53 @@
 # Strcture du Projet : 
 
 ChallengeJS_Instant/
+│
 ├── assets/
 │   ├── css/
-│   │   ├── 404.css
-│   │   ├── accueil.css
-│   │   ├── conditions-de-vente.css
-│   │   ├── contactez-nous.css
-│   │   ├── jeux.css
-│   │   ├── login.css
-│   │   ├── politique-de-confidentialite.css
-│   │   ├── programme-affiliation.css
-│   │   ├── register.css
-│   │   ├── shop.css
-│   │   ├── support.css
 │   ├── img/
-│   │   ├── ...
-│   ├── js/
-│       ├── main.js
+│   └── js/
+│
 ├── backEnd/
-├── controller/
-│   ├── controller.js
-├── node_modules/
-├── route/
-│   ├── route.js
-├── app.js
-├── data.json
-├── package.json
-├── package-lock.json
+│   ├── api/
+│   │   ├── controllers/
+│   │   │   └── cartController.js
+│   │   │   └── userController.js
+│   │   ├── routes/
+│   │   │   └── cartRoutes.js
+│   │   │   └── userRoutes.js
+│   ├── DB/
+│   │   ├── createTable.sql
+│   │   └── Users.sql
+│   ├── controllers/
+│   │   ├── controller.js
+│   │   └── controller_db.js
+│   ├── routes/
+│   │   └── route.js
+│   ├── .env
+│   ├── app.js
+│   ├── config.js
+│   ├── data.json
+│   ├── package.json
+│   └── package-lock.json
+│
 ├── template/
 │   ├── views/
 │   │   ├── accueil.ejs
 │   │   ├── jeu.ejs
+│   │   ├── 404.html
+│   │   ├── Accueil.html
+│   │   ├── conditions-de-vente.html
+│   │   ├── contactez-nous.html
+│   │   ├── jeux.html
+│   │   ├── login.html
+│   │   ├── manor-lords.html
+│   │   ├── politique-de-confidentialite.html
+│   │   ├── programme-affiliation.html
+│   │   ├── register.html
+│   │   ├── shop.html
+│   │   └── support.html
+│
 └── README.md
-
-
 
 
 # NovaMarket - Site de E-Commerce pour Jeux Vidéo
@@ -48,8 +61,12 @@ Assurez-vous d'avoir Node.js installé sur votre machine. Ensuite, suivez les é
 - npm install --save-dev nodemon
 - npm start
 - npm install express
-- Serveur Running on port 3000
+- Serveur Running on port 3070
 
+
+### Quand les dependances sont requises :
+- npm start
+- localhost:3070
 
 ### Étapes d'Installation
 
