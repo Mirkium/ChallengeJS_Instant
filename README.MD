@@ -1,4 +1,4 @@
-# Strcture du Projet : 
+# Structure du Projet : 
 
 ChallengeJS_Instant/
 │
