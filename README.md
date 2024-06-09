@@ -1,52 +1,90 @@
 # Structure du Projet : 
 
-ChallengeJS_Instant/
-│
-├── assets/
-│   ├── css/
-│   ├── img/
-│   └── js/
-│
-├── backEnd/
-│   ├── api/
-│   │   ├── controllers/
-│   │   │   └── cartController.js
-│   │   │   └── userController.js
-│   │   ├── routes/
-│   │   │   └── cartRoutes.js
-│   │   │   └── userRoutes.js
-│   ├── DB/
+ChallengeJS_Instant
+├── api
+│   ├── config
+│   │   └── db.js
+│   ├── controllers
+│   │   ├── categoryController.js
+│   │   ├── discountController.js
+│   │   ├── imageController.js
+│   │   ├── orderController.js
+│   │   ├── orderDetailController.js
+│   │   ├── productController.js
+│   │   ├── productReviewController.js
+│   │   └── userController.js
+│   ├── data
+│   │   └── boutique_bun.sql
+│   ├── models
+│   │   ├── categoryModel.js
+│   │   ├── discountModel.js
+│   │   ├── imageModel.js
+│   │   ├── orderDetailModel.js
+│   │   ├── orderModel.js
+│   │   ├── productModel.js
+│   │   ├── productReviewModel.js
+│   │   └── userModel.js
+│   ├── routes
+│   │   ├── categoryRoute.js
+│   │   ├── discountRoute.js
+│   │   ├── imageRoute.js
+│   │   ├── orderDetailRoute.js
+│   │   ├── orderRoute.js
+│   │   ├── productReviewRoute.js
+│   │   ├── productRoute.js
+│   │   └── userRoute.js
+│   ├── app.js
+│   ├── package-lock.json
+│   └── package.json
+├── backEnd
+│   ├── controller
+│   │   ├── controller_db.js
+│   │   └── controller.js
+│   ├── DB
 │   │   ├── createTable.sql
 │   │   └── Users.sql
-│   ├── controllers/
-│   │   ├── controller.js
-│   │   └── controller_db.js
-│   ├── routes/
+│   ├── node_modules
+│   ├── routes
 │   │   └── route.js
 │   ├── .env
 │   ├── app.js
 │   ├── config.js
 │   ├── data.json
-│   ├── package.json
-│   └── package-lock.json
-│
-├── template/
-│   ├── views/
-│   │   ├── accueil.ejs
-│   │   ├── jeu.ejs
-│   │   ├── 404.html
-│   │   ├── Accueil.html
-│   │   ├── conditions-de-vente.html
-│   │   ├── contactez-nous.html
-│   │   ├── jeux.html
-│   │   ├── login.html
-│   │   ├── manor-lords.html
-│   │   ├── politique-de-confidentialite.html
-│   │   ├── programme-affiliation.html
-│   │   ├── register.html
-│   │   ├── shop.html
-│   │   └── support.html
-│
+│   ├── package-lock.json
+│   └── package.json
+├── frontEnd
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── 404.css
+│   │   │   ├── accueil.css
+│   │   │   ├── conditions-de-vente.css
+│   │   │   ├── contactez-nous.css
+│   │   │   ├── jeux.css
+│   │   │   ├── login.css
+│   │   │   ├── politique-de-confidentialite.css
+│   │   │   ├── programme-affiliation.css
+│   │   │   ├── register.css
+│   │   │   ├── shop.css
+│   │   │   └── support.css
+│   │   ├── img
+│   │   └── js
+│   │       └── main.js
+│   ├── template
+│   │   └── views
+│   │       ├── 404.html
+│   │       ├── accueil.html
+│   │       ├── conditions-de-vente.html
+│   │       ├── contactez-nous.html
+│   │       ├── jeux.html
+│   │       ├── login.html
+│   │       ├── manor-lords.html
+│   │       ├── politique-de-confidentialite.html
+│   │       ├── programme-affiliation.html
+│   │       ├── register.html
+│   │       ├── shop.html
+│   │       └── support.html
+├── .gitattributes
+├── .gitignore
 └── README.md
 
 
