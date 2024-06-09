@@ -20,8 +20,8 @@ exports.getProductById = (req, res) => {
 };
 
 exports.createProduct = (req, res) => {
-    const { name, description, price, img, category, promo } = req.body;
-    const newProduct = { name, description, price, img, category, promo };
+    const { name, description, price, quantity, couleur, type, gender, size, discount_id, category_id } = req.body;
+    const newProduct = { name, description, price, quantity, couleur, type, gender, size, discount_id, category_id };
 
     Product.create(newProduct, (err, result) => {
         if (err) {
@@ -33,9 +33,9 @@ exports.createProduct = (req, res) => {
 
 exports.updateProduct = (req, res) => {
     const { id } = req.params;
-    const { name, description, price, img, category, promo } = req.body;
+    const { name, description, price, quantity, couleur, type, gender, size, discount_id, category_id } = req.body;
 
-    Product.update(id, { name, description, price, img, category, promo }, (err, result) => {
+    Product.update(id, { name, description, price, quantity, couleur, type, gender, size, discount_id, category_id }, (err, result) => {
         if (err) {
             return res.status(500).json({ message: 'Error updating product', error: err });
         }
