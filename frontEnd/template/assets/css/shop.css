@@ -1,0 +1,213 @@
+@import url('/ChallengeJS_Instant/assets/css/Accueil.css');
+
+.shop {
+    padding: 80px 20px 20px 20px;
+}
+
+.cart-empty {
+    text-align: center;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-empty p {
+    margin: 0 0 20px 0;
+}
+
+.cart-empty a {
+    color: #fff;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cart-empty a:hover {
+    background-color: darkorange;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a, .platforms a, .icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav a:hover, .platforms a:hover, .icons a:hover {
+    text-decoration: underline;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.highlight {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.highlight-image img {
+    width: 100%;
+    height: auto;
+}
+
+.highlight-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.highlight-info h1 {
+    margin: 0;
+}
+
+.discount {
+    color: orange;
+}
+
+.trends, .preorders, .promotions {
+    padding: 20px;
+    background-color: #181818;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.trends h2, .preorders h2, .promotions h2 {
+    margin: 0 0 20px 0;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centrer les éléments */
+}
+
+.game {
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 200px; /* Assurer que chaque carte occupe le bon espace */
+    margin: 10px; /* Ajouter de l'espacement entre les cartes */
+    max-width: 300px; /* Limiter la largeur maximale des cartes */
+    transition: transform 0.3s; /* Ajouter une transition pour l'animation */
+}
+
+.game:hover {
+    transform: scale(1.05); /* Agrandir légèrement l'image au survol */
+}
+
+.game img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game-info {
+    margin-top: 10px;
+}
+
+.title {
+    display: block;
+    margin: 10px 0;
+}
+
+.discount {
+    display: block;
+    color: orange;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+}
+
+.footer-content {
+    background-color: #181818;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Parti Responsives :  */
+@media (max-width: 1200px) {
+    .game {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .search {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .game {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav, .platforms {
+        justify-content: center;
+    }
+
+    .game {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
