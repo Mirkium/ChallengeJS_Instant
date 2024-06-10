@@ -1,5 +1,5 @@
 const catalogue = document.getElementById(".catalogue");
-const url = "http://localhost:3000/";
+const url = "http://localhost:3070/";
 
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
