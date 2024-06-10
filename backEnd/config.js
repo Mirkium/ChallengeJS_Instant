@@ -1,4 +1,4 @@
-const dotenv = require('dotenv');
+/*const dotenv = require('dotenv');
 
 dotenv.config();
 
@@ -19,4 +19,4 @@ Connection_DB.connect(() => {
     console.log("a")
 })
 
-module.exports = Connection_DB;
+module.exports = Connection_DB;*/
