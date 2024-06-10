@@ -1,4 +1,4 @@
-/*const connect = require("../config")
+const connect = require("../config")
 
 exports.GetGames = async (from, to) => {
     return new Promise(resolve => {
@@ -29,4 +29,3 @@ exports.GetGame = async (gameId) => {
         });
     })
 }
-*/

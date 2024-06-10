@@ -1,4 +1,4 @@
-/*const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const { GetGames, GetGame } = require('./controller_db');
 const gamesData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data.json'), 'utf-8'));
@@ -16,4 +16,4 @@ exports.getJeu =async(req, res) => {
     } else {
         res.status(404).render('404');
     }
-};*/
+};
