@@ -1,5 +1,6 @@
 const catalogue = document.getElementById(".catalogue");
 const url = "http://localhost:3000/";
+const inputNova = document.querySelector(".logo");
 
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -26,3 +27,7 @@ window.addEventListener('load', function() {
         userIcon.innerHTML = `<img src="${userImage}" alt="User Icon" style="width: 24px; height: 24px; border-radius: 50%;">`;
     }
 });
+
+inputNova.addEventListener('onclick', function() {
+    window.location.href = 'accueil.ejs';
+})
