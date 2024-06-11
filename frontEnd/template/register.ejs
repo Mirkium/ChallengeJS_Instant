@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/template/assets/css/register.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><%= siteName %></div>
+        <nav class="nav">
+            <a href="/accueil">Accueil</a>
+            <a href="/accueil#trends">Tendances</a>
+            <a href="/accueil#preorders">Précommandes</a>
+            <a href="/accueil#promotions">Prochaines sorties</a>
+            <a href="/support">Support 24/7</a>
+        </nav>
+        <div class="platforms">
+            <a href="/jeux#classics">Playstation</a>
+            <a href="/jeux#console-games">Xbox</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Rechercher...">
+        </div>
+        <div class="icons">
+            <a href="/shop">&#128722;</a>
+            <a href="/login">&#128100;</a> 
+        </div>
+    </header>
+    <main>
+        <section class="register">
+            <h2>S'inscrire</h2>
+            <form id="register-form">
+                <input type="text" name="name" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Mot de passe" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+            <p>Déjà inscrit ? <a href="/login">Se connecter</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <%= currentYear %> <%= siteName %>. Tous droits réservés.</p>
+    </footer>
+    <script>
+        document.getElementById('register-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = '/login'; 
+        });
+    </script>
+</body>
+</html>
