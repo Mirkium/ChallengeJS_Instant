@@ -167,4 +167,4 @@ bash
 - npm start
 
 
-# ENJOY NovaMarket
+# Enjoy NovaMarket
