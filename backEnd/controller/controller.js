@@ -1,10 +1,12 @@
 const fs = require('fs');
-const path = require('path');
 const { GetGames, GetGame } = require('./controller_db');
-const gamesData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data.json'), 'utf-8'));
+
+
+
 
 exports.getAccueil = async(req, res) => {
     let games = await GetGames(0, 10)
+    console.log("acceuil")
     res.render('accueil', { games });
 };
 
@@ -17,3 +19,32 @@ exports.getJeu =async(req, res) => {
         res.status(404).render('404');
     }
 };
+
+exports.getPanier = async (req,res) => {
+
+};
+
+exports.getShop = async (req, res) => {
+
+};
+
+exports.getLogin =async (req, res) => {
+
+};
+
+exports.getRegister = async (req, res) => {
+
+};
+
+exports.getComputer = async (req, res) => {
+
+};
+
+exports.getPlaystation = async (req, res) => {
+
+};
+
+exports.getXbox = async (req, res) => {
+
+};
+

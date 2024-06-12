@@ -1,0 +1,78 @@
+.header {
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(14, 13, 13, 0.9);
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo > a {
+    text-decoration: none;
+    display: flex;
+}
+
+.logo > a:hover {
+    color: #fff;
+}
+
+#N , #M {
+    color: rgb(252, 190, 2);
+}
+
+#o , #A {
+    color: rgb(232, 170, 2);
+}
+
+#v , #r {
+    color: rgb(212, 150, 2);
+}
+
+#a , #k {
+    color: rgb(192, 130, 2);
+}
+
+#e {
+    color: rgb(172, 110, 2);
+}
+
+#t {
+    color: rgb(152, 90, 2);
+}
+
+
+
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-link:focus, .logo-link:active {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav a, .platforms a, .icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav a:hover, .platforms a:hover, .icons a:hover {
+    text-decoration: underline;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}

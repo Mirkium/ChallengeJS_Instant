@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaMarket - Accueil</title>
+  <link rel="stylesheet" href="/assets/css/accueil.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+<body>
+  <%- include('../partials/header') %>
+
+  <main>
+    <section id="trends" class="trends">
+      <div class="games">
+        <% games.forEach(game => { %>
+          <div class="game">
+            <a href="/jeux/<%= game.id %>">
+              <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>">
+            </a>
+            <div class="game-info">
+              <span class="discount">-<%= game.promo %>%</span>
+              <span class="title"><%= game.name %></span>
+              <span class="price"><%= game.prix %>€</span>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </section>
+  </main>
+  
+  <script src="/assets/js/accueil.js"></script>
+</body>
+</html>

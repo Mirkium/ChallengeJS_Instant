@@ -1,10 +1,5 @@
 const catalogue = document.getElementById(".catalogue");
-<<<<<<< HEAD:assets/js/main.js
-const url = "http://localhost:3000/";
-const inputNova = document.querySelector(".logo");
-=======
-const url = "http://localhost:3070/";
->>>>>>> b23cad2cea02d648a6852b5d6fc0090b90bf17c6:frontEnd/template/assets/js/main.js
+
 
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -35,3 +30,17 @@ window.addEventListener('load', function() {
 inputNova.addEventListener('onclick', function() {
     window.location.href = 'accueil.ejs';
 })
+
+app.use((req, res, next) => {
+    res.locals.header = '../../partials/header';
+    res.locals.footer = '../../partials/footer';
+})
+
+
+// Middleware pour servir les fichiers statiques
+app.use(express.static(path.join(__dirname, '../assets')));
+app.use(express.static(path.join(__dirname, '../template')));
+
+// Définir EJS comme moteur de template
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '../../template/views'));

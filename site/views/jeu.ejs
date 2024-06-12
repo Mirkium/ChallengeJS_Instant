@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= game.name %></title>
+  <link rel="stylesheet" href="/assets/css/jeux.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+</head>
+<body>
+  <%- include('../partials/header') %>  <!--<%= game.description %>-->
+  <div class="fond">
+
+    <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>">
+  </div>
+  <div id="jeux">
+      <div class="achat_jeux">
+        <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>">
+        <div class="paiment">
+          <p id="name"><%= game.name %></p>
+          <div class="category">
+  
+          </div>
+          <div class="div_prix">
+            <p id="promo">-<%= game.promo%>%</p>
+            <p id="prix"><%= game.prix %>€</p>
+            
+          </div>
+          <button><p>Acheter</p></button>
+        </div>
+      </div>
+
+      <div class="a_propo">
+        <div>
+          <h2>Description</h2>
+          <p><%= game.description %></p>
+        </div>
+        
+      </div>
+  </div>
+
+
+
+
+
+
+  <footer>
+    <div class="footer-content">
+        <p>© 2024 NovaMarket - Tous droits réservés</p>
+        <nav class="nav">
+          <a href="../template/accueil.html#trends">Tendances</a>
+          <a href="../template/accueil.html#preorders">Précommandes Prochaines Sortie</a>
+          <a href="../template/accueil.html#promotions">Les promos de la semaine</a>
+          <a href="../template/support.html">Support 24/7</a>
+      </nav>
+    </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>
