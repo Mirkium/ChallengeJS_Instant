@@ -29,3 +29,22 @@ exports.GetGame = async (gameId) => {
         });
     })
 }
+
+// C'est la Nouvelle fonction pour enregistrer un utilisateur
+exports.registerUser = (userData) => {
+    return new Promise((resolve, reject) => {
+        const { username, email, password, first_name, last_name, date_of_birth, profile_image } = userData;
+
+        const sql = 'INSERT INTO users (username, email, password, first_name, last_name, date_of_birth, profile_image) VALUES (?, ?, ?, ?, ?, ?, ?)';
+        const values = [username, email, password, first_name, last_name, date_of_birth, profile_image];
+
+        connect.query(sql, values, (error, results) => {
+            if (error) {
+                console.error('Error inserting data:', error.stack);
+                reject(error);
+                return;
+            }
+            resolve(results);
+        });
+    });
+}
