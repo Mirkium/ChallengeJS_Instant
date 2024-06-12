@@ -29,9 +29,9 @@ class Product {
 
     static create(productData) {
         const { name, description, price, quantity, couleur, type, gender, size, discount_id, category_id } = productData;
-        const query = 'INSERT INTO products (name, description, price, quantity, couleur, type, gender, size, discount_id, category_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+        const query = 'INSERT INTO products (name, description, price, quantity, couleur, type, gender, discount_id, category_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
         return new Promise((resolve, reject) => {
-            db.query(query, [name, description, price, quantity, couleur, type, gender, size, discount_id, category_id], (err, results) => {
+            db.query(query, [name, description, price, quantity, couleur, type, gender, discount_id, category_id], (err, results) => {
                 if (err) {
                     reject(err);
                 } else {
@@ -43,9 +43,9 @@ class Product {
 
     static update(productID, productData) {
         const { name, description, price, quantity, couleur, type, gender, size, discount_id, category_id } = productData;
-        const query = 'UPDATE products SET name = ?, description = ?, price = ?, quantity = ?, couleur = ?, type = ?, gender = ?, size = ?, discount_id = ?, category_id = ? WHERE product_id = ?';
+        const query = 'UPDATE products SET name = ?, description = ?, price = ?, quantity = ?, couleur = ?, type = ?, gender = ?, discount_id = ?, category_id = ? WHERE product_id = ?';
         return new Promise((resolve, reject) => {
-            db.query(query, [name, description, price, quantity, couleur, type, gender, size, discount_id, category_id, productID], (err, results) => {
+            db.query(query, [name, description, price, quantity, couleur, type, gender, discount_id, category_id, productID], (err, results) => {
                 if (err) {
                     reject(err);
                 } else {
