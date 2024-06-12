@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= game.name %></title>
+  <link rel="stylesheet" href="/css/jeux.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">NovaMarket</div>
+    <nav class="nav">
+      <a href="#trends">Tendances</a>
+      <a href="#preorders">Précommandes Prochaines Sortie</a>
+      <a href="#promotions">Les promos de la semaine</a>
+      <a href="../template/support.html">Support 24/7</a>
+  </nav>
+  </header>
+  <main>
+    <section class="game-details">
+      <h1><%= game.name %></h1>
+      <div class="game-info">
+        <img src="/img/<%= game.img %>" alt="<%= game.name %>">
+        <div class="details">
+          <p><%= game.description %></p>
+          <p>Prix : <%= game.prix %>€</p>
+          <p>Catégorie : <%= game.category %></p>
+          <p>Promotion : -<%= game.promo %>%</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+        <p>© 2024 NovaMarket - Tous droits réservés</p>
+        <nav class="nav">
+          <a href="../template/accueil.html#trends">Tendances</a>
+          <a href="../template/accueil.html#preorders">Précommandes Prochaines Sortie</a>
+          <a href="../template/accueil.html#promotions">Les promos de la semaine</a>
+          <a href="../template/support.html">Support 24/7</a>
+      </nav>
+    </div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

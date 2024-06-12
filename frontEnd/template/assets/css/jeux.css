@@ -13,20 +13,21 @@ body {
     padding: 10px 20px;
 }
 
-.logo-link {
-    text-decoration: none;
-}
-
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    transition: color 0.3s, transform 0.3s;
 }
 
-.logo-link:hover .logo {
-    color: #888;
-    transform: scale(1.1);
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-link:focus, .logo-link:active {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
 }
 
 .nav a, .platforms a, .icons a {
@@ -44,21 +45,55 @@ body {
     border-radius: 5px;
     border: none;
 }
-
-.content {
+.discount {
+    color: orange;
+}
+.main {
     padding: 20px;
 }
 
-.content h1 {
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game {
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 10px;
     text-align: center;
-    margin-bottom: 20px;
+    flex: 1 1 200px;
+    margin: 10px;
+    max-width: 300px;
+    transition: transform 0.3s;
 }
 
-.content p {
-    margin-bottom: 20px;
+.game:hover {
+    transform: scale(1.05);
 }
 
-.footer-content {
+.game img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game-info {
+    margin-top: 10px;
+}
+
+.title {
+    display: block;
+    margin: 10px 0;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+}
+
+footer {
     background-color: #181818;
     padding: 20px;
     text-align: center;

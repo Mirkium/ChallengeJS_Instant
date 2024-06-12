@@ -1,4 +1,4 @@
-@import url('/ChallengeJS_Instant/assets/css/Accueil.css');
+@import url('/ChallengeJS_Instant/assets/css/accueil.css');
 
 .login {
     padding: 80px 20px 20px 20px;
@@ -15,12 +15,17 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: #3a3a3a; /* Couleur plus claire */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .login input {
     padding: 10px;
     border-radius: 5px;
     border: none;
+    background-color: #555;
+    color: #fff;
 }
 
 .login button {
@@ -41,7 +46,7 @@
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
-    background-color: #282828;
+    background-color: #383838;
     color: #fff;
     border-radius: 5px;
     text-align: center;
@@ -49,4 +54,97 @@
 
 #file-upload {
     display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #1c1c1c; /* Couleur légèrement plus claire */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424; /* Couleur légèrement plus claire */
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a, .platforms a, .icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav a:hover, .platforms a:hover, .icons a:hover {
+    text-decoration: underline;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: #242424; /* J'ai essayer d'apdapter la Couleur légèrement plus claire */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Partie Responsive adapter pour les apareils */
+@media (max-width: 1200px) {
+    .login form {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .search {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .login form {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav, .platforms {
+        justify-content: center;
+    }
+
+    .login form {
+        max-width: 100%;
+    }
 }
