@@ -2,6 +2,7 @@ const Product = require('../models/productModel');
 
 // Get all products
 exports.getAllProducts = async (req, res) => {
+    console.log("test de tous les produit")
     try {
         const products = await Product.getAll();
         res.status(200).json(products);

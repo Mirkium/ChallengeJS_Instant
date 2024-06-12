@@ -1,4 +1,4 @@
-/* achat.css */
+/* C'est le css de : achat.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -125,7 +125,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Partie Responsive */
+/* Partie Responsive adapter pour les apareils */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;

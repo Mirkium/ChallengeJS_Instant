@@ -122,7 +122,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Partie Responsives */
+/* Partie Responsive adapter pour les apareils */
 @media (max-width: 1200px) {
     .game {
         flex: 1 1 calc(50% - 40px);

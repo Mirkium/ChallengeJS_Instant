@@ -104,7 +104,7 @@ body {
 }
 
 footer {
-    background-color: #242424; /* Couleur légèrement plus claire */
+    background-color: #242424; /* J'ai essayer d'apdapter la Couleur légèrement plus claire */
     padding: 20px;
     text-align: center;
     color: #fff;
@@ -117,7 +117,7 @@ footer p {
     margin: 0;
 }
 
-/* Partie Responsive :  */
+/* Partie Responsive adapter pour les apareils */
 @media (max-width: 1200px) {
     .login form {
         max-width: 50%;

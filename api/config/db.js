@@ -8,7 +8,7 @@ const config_SQL = {
     host: 'localhost',
     user: 'root',
     password: '', // Remplacez par notre mot de passe MySQL
-    database: '', // Remplacez par notre database MySQL
+    database: 'boutique_novamarket', // Remplacez par notre database MySQL
     connectionLimit: 50
   };
 
