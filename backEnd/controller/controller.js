@@ -3,10 +3,12 @@ const { GetGames, GetGame } = require('./controller_db');
 
 
 
-
 exports.getAccueil = async(req, res) => {
     let games = await GetGames(0, 10)
+    
     console.log("acceuil")
+    
+
     res.render('accueil', { games });
 };
 

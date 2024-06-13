@@ -78,20 +78,20 @@ body {
     padding: 5px;
 }
 
-button {
+.achat {
     font-weight: bold;
     background-color: orange;
     color: #fff;
     width: 40%;
     border-radius: 30px;
     margin-bottom: 20px;
+    font-size: 1.3em;
+    padding: 7px;
+    text-decoration: none;
 }
 
-button > p {
-    font-size: 120%;
-}
 
-button:hover {
+.achat:hover {
     background-color: #fff;
     color: black;
 }
