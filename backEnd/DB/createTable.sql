@@ -64,15 +64,17 @@ VALUES
 
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    pseudo VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL
+    email VARCHAR(255) NOT NULL UNIQUE,
+    pseudo VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    adress VARCHAR(255) NOT NULL
 );
 
 -- ceci est un exemple pour notre Insertion de données dans la table users  !!!
-INSERT INTO users (pseudo, password) VALUES ('JohnDoe', 'securepassword123');
-INSERT INTO users (pseudo, password) VALUES ('JaneDoe', 'anothersecurepassword');
-INSERT INTO users (pseudo, password) VALUES ('Admin', 'adminpassword');
-INSERT INTO users (pseudo, password) VALUES ('TestUser', 'testpassword');
+INSERT INTO users (email, pseudo, password, address) VALUES
+('test@example.com', 'alice', 'mdp123', '895 Apple St, Wonderland'),
+('ok@example.com', 'bob', 'mdp456', '284 Banana St, Fruitland'),
+('good@example.com', 'carol', 'mdp789', '269 Cherry St, Berryland');
 
 CREATE TABLE IF NOT EXISTS cart (
     id INT AUTO_INCREMENT PRIMARY KEY,
