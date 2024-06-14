@@ -16,18 +16,6 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
-}
-
-.logo-link {
-    text-decoration: none;
-    color: #fff;
-}
-
-.logo-link:focus, .logo-link:active {
-    outline: none;
-    text-decoration: none;
-    color: #fff;
 }
 
 .nav a, .platforms a, .icons a {
@@ -45,18 +33,54 @@ body {
     border-radius: 5px;
     border: none;
 }
+
+.main {
+    padding: 20px;
+}
+
+.highlight {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.highlight-image img {
+    width: 100%;
+    height: auto;
+}
+
+.highlight-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.highlight-info h1 {
+    margin: 0;
+}
+
 .discount {
     color: orange;
 }
-.main {
+
+.trends, .preorders, .promotions {
     padding: 20px;
+    background-color: #181818;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.trends h2, .preorders h2, .promotions h2 {
+    margin: 0 0 20px 0;
 }
 
 .games {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: center; /* Centrer les éléments */
 }
 
 .game {
@@ -64,14 +88,14 @@ body {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    flex: 1 1 200px;
-    margin: 10px;
-    max-width: 300px;
-    transition: transform 0.3s;
+    flex: 1 1 200px; /* Assurer que chaque carte occupe le bon espace */
+    margin: 10px; /* Ajouter de l'espacement entre les cartes */
+    max-width: 300px; /* Limiter la largeur maximale des cartes */
+    transition: transform 0.3s; /* Ajouter une transition pour l'animation */
 }
 
 .game:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Agrandir légèrement l'image au survol */
 }
 
 .game img {
@@ -88,12 +112,17 @@ body {
     margin: 10px 0;
 }
 
+.discount {
+    display: block;
+    color: orange;
+}
+
 .price {
     display: block;
     font-weight: bold;
 }
 
-footer {
+.footer-content {
     background-color: #181818;
     padding: 20px;
     text-align: center;
@@ -122,7 +151,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Partie Responsive adapter pour les apareils */
+/* Parti Responsives :  */
 @media (max-width: 1200px) {
     .game {
         flex: 1 1 calc(50% - 40px);

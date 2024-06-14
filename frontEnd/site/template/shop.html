@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S'inscrire</title>
-    <link rel="stylesheet" href="../template/assets/css/register.css">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="../assets/css/shop.css">
 </head>
 <body>
     <header class="header">
@@ -24,30 +24,22 @@
             <input type="text" placeholder="Rechercher...">
         </div>
         <div class="icons">
-            <a href="shop.html">&#128722;</a>
-            <a href="login.html">&#128100;</a> 
+            <a href="../template/shop.html">&#128722;</a>
+            <a href="../template/login.html">&#128100;</a>
         </div>
     </header>
     <main>
-        <section class="register">
-            <h2>S'inscrire</h2>
-            <form id="register-form">
-                <input type="text" placeholder="Nom" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Mot de passe" required>
-                <button type="submit">S'inscrire</button>
-            </form>
-            <p>Déjà inscrit ? <a href="login.html">Se connecter</a></p>
+        <section class="shop">
+            <h2>Votre panier</h2>
+            <div class="cart-empty">
+                <p>Votre panier est vide.</p>
+                <a href="../template/accueil.html">Découvrir des jeux</a>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 NovaMarket. Tous droits réservés.</p>
     </footer>
-    <script>
-        document.getElementById('register-form').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            window.location.href = 'login.html'; 
-        });
-    </script>
+    <script src="../template/assets/js/script.js"></script>
 </body>
 </html>
