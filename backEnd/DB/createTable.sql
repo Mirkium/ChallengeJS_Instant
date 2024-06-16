@@ -15,22 +15,7 @@ CREATE TABLE IF NOT EXISTS video_games (
     xbox BOOL
 );
 
-CREATE TABLE IF NOT EXISTS users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    pseudo VARCHAR(255),
-    password VARCHAR(255)
-);
-
-CREATE TABLE IF NOT EXISTS cart (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
-    product_id INT,
-    quantity INT,
-    FOREIGN KEY (user_id) REFERENCES users(id),
-    FOREIGN KEY (product_id) REFERENCES video_games(id)
-);
-
-
+--Toutes les données pour video games -- 
 INSERT INTO video_games (id, prix, name, description, img, category, promo)
 VALUES
     (1, 20.17, 'Manor Lords', 'Développez votre village médiéval en une ville prospère dans ce jeu de stratégie complexe.', 'manor-lords-pc-jeu-steam-europe-cover.jpg', 'Strategy', 50),
@@ -80,4 +65,32 @@ VALUES
     (45, 99.99, 'State of Decay 2: Juggernaut Edition (PC / Xbox ONE / Xbox Series X|S)', 'Un jeu de survie intense où vous devez gérer une communauté de survivants dans un monde post-apocalyptique. Explorez, récupérez des ressources et combattez des hordes de zombies pour assurer la survie de votre groupe. Cette édition comprend du contenu supplémentaire et des améliorations graphiques.', 'state-of-decay-2-juggernaut-edition-pc-xbox-one-xbox-series-x-s-juggernaut-edition-pc-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg', 'Survival', 39);
 
 
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    pseudo VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    adress VARCHAR(255) NOT NULL
+);
 
+-- ceci est un exemple pour notre Insertion de données dans la table users  !!!
+INSERT INTO users (email, pseudo, password, address) VALUES
+('test@example.com', 'alice', 'mdp123', '895 Apple St, Wonderland'),
+('ok@example.com', 'bob', 'mdp456', '284 Banana St, Fruitland'),
+('good@example.com', 'carol', 'mdp789', '269 Cherry St, Berryland');
+
+CREATE TABLE IF NOT EXISTS cart (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    product_id INT,
+    quantity INT,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (product_id) REFERENCES video_games(id)
+);
+
+
+-- c'est la meme chose ceci est un exemple pour notre Insertion de données dans la table cart !!!
+INSERT INTO cart (user_id, product_id, quantity) VALUES (1, 1, 2);
+INSERT INTO cart (user_id, product_id, quantity) VALUES (2, 3, 1);
+INSERT INTO cart (user_id, product_id, quantity) VALUES (3, 2, 4);
+INSERT INTO cart (user_id, product_id, quantity) VALUES (4, 4, 1);
