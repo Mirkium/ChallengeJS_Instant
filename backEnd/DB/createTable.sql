@@ -9,7 +9,10 @@ CREATE TABLE IF NOT EXISTS video_games (
     description TEXT,
     img VARCHAR(255),
     category VARCHAR(255),
-    promo INT
+    promo INT,
+    pc BOOL,
+    playstation BOOL,
+    xbox BOOL
 );
 
 CREATE TABLE IF NOT EXISTS users (

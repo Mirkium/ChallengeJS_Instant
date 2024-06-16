@@ -1,11 +1,13 @@
 const fs = require('fs');
-const { GetGames, GetGame } = require('./controller_db');
+const { GetGames, GetGame, GetComputerGame, GetPlaystationGame, GetXboxGame } = require('./controller_db');
+
 
 
 
 exports.getAccueil = async(req, res) => {
-    let games = await GetGames(0, 10)
-    
+    let games = await GetGames(0, 25)
+
+
     console.log("acceuil")
     
 
@@ -39,14 +41,19 @@ exports.getRegister = async (req, res) => {
 };
 
 exports.getComputer = async (req, res) => {
-
+    let games = await GetComputerGame();
+    res.render('pc', { games });
 };
 
 exports.getPlaystation = async (req, res) => {
-
+    let games = await GetPlaystationGame();
+    console.log(games);
+    res.render('ps', { games });
 };
 
 exports.getXbox = async (req, res) => {
-
+    let games = await GetXboxGame();
+    console.log(games);
+    res.render('xbox', { games })
 };
 

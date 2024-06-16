@@ -11,25 +11,38 @@
 <body>
   <%- include('../partials/header') %>
 
-  <main>
-    <section id="trends" class="trends">
-      <div class="games">
+  <div class="support">
+
+    <div class="carouselles">
+        <div id="slider">
         <% games.forEach(game => { %>
-          <div class="game">
-            <a href="/jeux/<%= game.id %>">
-              <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>">
-            </a>
-            <div class="game-info">
-              <span class="discount">-<%= game.promo %>%</span>
-              <span class="title"><%= game.name %></span>
-              <span class="price"><%= game.prix %>€</span>
+            <div class="slide" >
+                <a href="/jeux/<%= game.id %>">
+                  <p id="promo" data-franchise="<%= game.promo %>">-<%= game.promo %>%</p>
+                  <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>" id="game_img" data-franchise="<%= game.img %>">
+                  <button id="liked" onclick="EnvoieData()">♡</button>
+                </a>
+                <div class="info">
+                  <p id="name" data-franchise="<%= game.name %>"><%= game.name %></p>
+                  
+                  
+                </div>
+                
             </div>
-          </div>
         <% }); %>
-      </div>
-    </section>
-  </main>
+        
+        </div>
+        <div class="arrow prev" onclick="prevSlide()">&#10094;</div>
+        <div class="arrow next" onclick="nextSlide()">&#10095;</div>
+        <div class="dots"></div>
+    </div>
+  </div>
+
+  
+
+  <%- include('../partials/footer') %>
   
   <script src="/assets/js/accueil.js"></script>
+  <script src="/assets/js/like.js"></script>
 </body>
 </html>

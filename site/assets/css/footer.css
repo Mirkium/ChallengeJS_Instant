@@ -1,0 +1,23 @@
+.footer-content {
+    
+    background-color: #181818;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.fondateurs {
+    text-align: center;
+    color: #7f7e7e;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}

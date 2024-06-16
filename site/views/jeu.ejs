@@ -6,6 +6,7 @@
   <title><%= game.name %></title>
   <link rel="stylesheet" href="/assets/css/jeux.css">
   <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 <body>
   <%- include('../partials/header') %>  <!--<%= game.description %>-->
@@ -39,22 +40,7 @@
       </div>
   </div>
 
-
-
-
-
-
-  <footer>
-    <div class="footer-content">
-        <p>© 2024 NovaMarket - Tous droits réservés</p>
-        <nav class="nav">
-          <a href="../template/accueil.html#trends">Tendances</a>
-          <a href="../template/accueil.html#preorders">Précommandes Prochaines Sortie</a>
-          <a href="../template/accueil.html#promotions">Les promos de la semaine</a>
-          <a href="../template/support.html">Support 24/7</a>
-      </nav>
-    </div>
-</footer>
+  <%- include('../partials/footer') %>
 <script src="/assets/js/main.js"></script>
 
 </body>

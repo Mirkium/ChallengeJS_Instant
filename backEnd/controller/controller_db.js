@@ -1,5 +1,7 @@
 const connect = require("../config")
 
+
+
 exports.GetGames = async (from, to) => {
     return new Promise(resolve => {
         connect.query('SELECT * FROM video_games', (err, results, fields) => {
@@ -27,6 +29,47 @@ exports.GetGame = async (gameId) => {
             let target = results.find(i => i.id === gameId)
             resolve(target)
         });
+    })
+}
+
+exports.GetComputerGame = async () => {
+    return new Promise(resolve => {
+        connect.query('SELECT * FROM video_games WHERE pc = 1', (err, results, fields) => {
+            if (err) {
+                throw err;
+            }
+            else {
+                
+                resolve(results);
+            }
+        })
+    })
+}
+
+exports.GetPlaystationGame = async () => {
+    return new Promise(resolve => {
+        connect.query('SELECT * FROM video_games WHERE playstation = 1', (err, results, fields) => {
+            if (err) {
+                throw err;
+            }
+            else {
+                
+                resolve(results);
+            }
+        })
+    })
+}
+
+exports.GetXboxGame = async () => {
+    return new Promise(resolve => {
+        connect.query('SELECT * FROM video_games WHERE xbox = 1', (err, results, fields) => {
+            if (err) {
+                throw err;
+            }
+            else {
+                resolve(results);
+            }
+        })
     })
 }
 

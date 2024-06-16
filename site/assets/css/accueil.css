@@ -6,129 +6,191 @@ body {
 }
 
 
-.main {
-    top: 10%;
-    padding: 20px;
-}
 
-.highlight {
-    position: relative;
-    margin-bottom: 40px;
-}
+/*===================================GAMES========================================*/
 
-.highlight-image img {
-    width: 100%;
-    height: auto;
-}
-
-.highlight-info {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.highlight-info h1 {
-    margin: 0;
-}
-
-.discount {
-    color: orange;
-}
-
-#trends {
-    position: absolute;
-    top: 15%;
-}
-
-.trends, .preorders, .promotions {
-    padding: 20px;
-    background-color: #181818;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-
-.trends h2, .preorders h2, .promotions h2 {
-    margin: 0 0 20px 0;
-}
 
 .games {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center; /* Centrer les éléments */
+    }
+    
+    .game {
+        background-color: #282828;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        flex: 1 1 200px; /* Assurer que chaque carte occupe le bon espace */
+        margin: 10px; /* Ajouter de l'espacement entre les cartes */
+        max-width: 300px; /* Limiter la largeur maximale des cartes */
+        transition: transform 0.3s; /* Ajouter une transition pour l'animation */
+        }
+        
+    .game:hover {
+        transform: scale(1.05); /* Agrandir légèrement l'image au survol */
+    }
+            
+    .game img {
+        width: 100%;
+        border-radius: 10px;
+    }
+                
+    .game-info {
+        margin-top: 10px;
+    }
+                    
+        .discount {
+            color: orange;
+        }
+
+        .title {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .discount {
+            display: block;
+            color: orange;
+        }
+
+        .price {
+            display: block;
+            font-weight: bold;
+        }
+
+/*======================================================================*/
+
+/*==================================CAROUSEL================================*/
+
+.support {
+    position: absolute;
+    top: 17%;
+    
 }
 
-.game {
-    background-color: #282828;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    flex: 1 1 200px; /* Assurer que chaque carte occupe le bon espace */
-    margin: 10px; /* Ajouter de l'espacement entre les cartes */
-    max-width: 300px; /* Limiter la largeur maximale des cartes */
-    transition: transform 0.3s; /* Ajouter une transition pour l'animation */
+.carouselles {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #232121;
+    border-radius: 20px;
 }
 
-.game:hover {
-    transform: scale(1.05); /* Agrandir légèrement l'image au survol */
+
+#slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.game img {
+
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide > a {
     width: 100%;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
 }
 
-.game-info {
-    margin-top: 10px;
-}
-
-.title {
+.info {
     display: block;
-    margin: 10px 0;
+    justify-content: space-between;
 }
 
-.discount {
-    display: block;
-    color: orange;
-}
-
-.price {
-    display: block;
+#name {
+    text-align: center;
     font-weight: bold;
 }
 
-.footer-content {
-    
-    background-color: #181818;
-    padding: 20px;
+#promo {
     text-align: center;
+    color: #fff;
+    background-color: orange;
+    padding: 5px;
+    width: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 2%;
+    right: 80%;
+    z-index: 1;
 }
 
-.footer-content p {
-    margin: 0;
-    padding: 10px 0;
-    font-size: 14px;
+#liked {
+    position: absolute;
+    top: 3%;
+    right: 17%;
+    font-size: 1.2em;
 }
 
-.footer-nav {
+#game_img {
+    width: 70%;
+    position: relative;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+.arrow.prev {
+    left: 200px;
+}
+.arrow.next {
+    right: 200px;
+}
+.dots {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+.dot {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+
+}
+.dot.active {
+    background-color: #11ed20;
+    border-color: #fff;
+    border: solid 1px;
+    width: 9px;
+    height: 9px;
+}
+.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-}
+/*==========================================================================*/
 
-.footer-nav a:hover {
-    text-decoration: underline;
-}
+
 
 /* Parti Responsives :  */
 @media (max-width: 1200px) {
@@ -161,3 +223,5 @@ body {
         flex: 1 1 calc(100% - 20px);
     }
 }
+
+
