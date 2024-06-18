@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NovaMarket - Accueil</title>
   <link rel="stylesheet" href="/assets/css/accueil.css">
-  <link rel="stylesheet" href="/assets/css/header.css">
-  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/partials_css/header.css">
+  <link rel="stylesheet" href="/assets/css/partials_css/footer.css">
 </head>
 <body>
   <%- include('../partials/header') %>
 
   <div class="support">
-
     <div class="carouselles">
         <div id="slider">
         <% games.forEach(game => { %>
@@ -20,11 +19,10 @@
                 <a href="/jeux/<%= game.id %>">
                   <p id="promo" data-franchise="<%= game.promo %>">-<%= game.promo %>%</p>
                   <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>" id="game_img" data-franchise="<%= game.img %>">
-                  <button id="liked" onclick="EnvoieData()">♡</button>
+                  
                 </a>
                 <div class="info">
                   <p id="name" data-franchise="<%= game.name %>"><%= game.name %></p>
-                  
                   
                 </div>
                 
@@ -38,7 +36,25 @@
     </div>
   </div>
 
-  
+  <main>
+    <section id="trends" class="trends">
+      <h2>Tendances</h2>
+      <div class="games">
+        <% games.forEach(game => { %>
+          <div class="game">
+            <a href="/jeux/<%= game.id %>">
+              <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>">
+            </a>
+            <div class="game-info">
+              <span class="discount">-<%= game.promo %>%</span>
+              <span class="title"><%= game.name %></span>
+              <span class="price"><%= game.prix %>€</span>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </section>
+  </main>
 
   <%- include('../partials/footer') %>
   

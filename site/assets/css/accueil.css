@@ -3,14 +3,7 @@ body {
     margin: 0;
     background-color: #121212;
     color: #fff;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #181818;
-    padding: 10px 20px;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -34,50 +27,9 @@ body {
     border: none;
 }
 
-<<<<<<< HEAD:site/assets/css/accueil.css
-=======
-.main {
-    padding: 20px;
-}
->>>>>>> 125aab618c629987113d209e6a1aba78f3ce95d2:frontEnd/site/assets/css/accueil.css
 
 /*===================================GAMES========================================*/
 
-<<<<<<< HEAD:site/assets/css/accueil.css
-=======
-.highlight-image img {
-    width: 100%;
-    height: auto;
-}
-
-.highlight-info {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.highlight-info h1 {
-    margin: 0;
-}
-
-.discount {
-    color: orange;
-}
-
-.trends, .preorders, .promotions {
-    padding: 20px;
-    background-color: #181818;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-
-.trends h2, .preorders h2, .promotions h2 {
-    margin: 0 0 20px 0;
-}
->>>>>>> 125aab618c629987113d209e6a1aba78f3ce95d2:frontEnd/site/assets/css/accueil.css
 
 .games {
     display: flex;
@@ -134,12 +86,13 @@ body {
 /*==================================CAROUSEL================================*/
 
 .support {
-    position: absolute;
-    top: 17%;
-    
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
 }
 
-.carouselles {
+.carousel {
     width: 70%;
     margin: 0 auto;
     overflow: hidden;
@@ -167,14 +120,16 @@ body {
 .slide > a {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 10px;
     position: relative;
 }
 
 .info {
-    display: block;
+    display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 #name {
@@ -182,13 +137,7 @@ body {
     font-weight: bold;
 }
 
-<<<<<<< HEAD:site/assets/css/accueil.css
 #promo {
-=======
-.footer-content {
-    background-color: #181818;
-    padding: 20px;
->>>>>>> 125aab618c629987113d209e6a1aba78f3ce95d2:frontEnd/site/assets/css/accueil.css
     text-align: center;
     color: #fff;
     background-color: orange;
@@ -198,19 +147,22 @@ body {
     font-weight: bold;
     position: absolute;
     top: 2%;
-    right: 80%;
+    right: 70%;
     z-index: 1;
 }
 
 #liked {
-    position: absolute;
-    top: 3%;
-    right: 17%;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    text-align: center;
+    
 }
 
+
 #game_img {
-    width: 70%;
+    width: 50%;
     position: relative;
     object-fit: cover;
     border-radius: 10px;
@@ -261,6 +213,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    
 }
 
 /*==========================================================================*/

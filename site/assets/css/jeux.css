@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+/*==================================================================*/
+
+.fond {
+    width: 100%;
+    padding-bottom: 20%;
+}
+
+.fond > img {
+    width: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+#jeux {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 66%;
+    width: 100%;
+}
+
+.achat_jeux {
+    padding: 15px;
+    background-color: rgba(44, 43, 43, 0.6);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+.achat_jeux > img {
+    border-radius: 40px;
+    padding: 2%;
+    width: 100%;
+}
+
+.paiment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(19, 18, 18);
+    border-radius: 10px;
+    width: 60%;
+}
+
+#name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 15px;
+}
+
+.div_prix {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+#promo {
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.6em;
+}
+
+#prix {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.achat {
+    text-decoration: none;
+    background-color: orange;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.achat:hover {
+    color: black;
+}
+
+.a_propo {
+    background-color: #2e2d2d;
+    width: 90%;
+    padding: 10px;
+}
+
+
+/*==================================================================*/
+
+/* Partie Responsives */
+@media (max-width: 1200px) {
+    .game {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .search {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .game {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav, .platforms {
+        justify-content: center;
+    }
+
+    .game {
+        flex: 1 1 calc(100% - 20px);
+    }
+}

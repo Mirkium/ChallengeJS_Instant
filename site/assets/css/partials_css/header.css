@@ -1,9 +1,11 @@
+
+
 .header {
     z-index: 2;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(14, 13, 13, 0.9);
+    background-color: rgba(23, 23, 23, 0.8);
     padding: 20px 20px;
     position: fixed;
     width: 100%;

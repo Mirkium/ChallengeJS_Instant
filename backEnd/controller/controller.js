@@ -1,8 +1,9 @@
 const fs = require('fs');
 const { GetGames, GetGame, GetComputerGame, GetPlaystationGame, GetXboxGame } = require('./controller_db');
 
-
-
+const listeName = [];
+const listeImg = [];
+const listePromo = [];
 
 exports.getAccueil = async(req, res) => {
     let games = await GetGames(0, 25)
@@ -46,14 +47,17 @@ exports.getComputer = async (req, res) => {
 };
 
 exports.getPlaystation = async (req, res) => {
+    
     let games = await GetPlaystationGame();
-    console.log(games);
+    
     res.render('ps', { games });
+    
+    
 };
 
 exports.getXbox = async (req, res) => {
     let games = await GetXboxGame();
-    console.log(games);
+    
     res.render('xbox', { games })
 };
 

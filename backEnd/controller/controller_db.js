@@ -39,7 +39,6 @@ exports.GetComputerGame = async () => {
                 throw err;
             }
             else {
-                
                 resolve(results);
             }
         })

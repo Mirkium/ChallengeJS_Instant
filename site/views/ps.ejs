@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/accueil.css">
+        <link rel="stylesheet" href="/assets/css/partials_css/header.css">
+        <link rel="stylesheet" href="/assets/css/partials_css/footer.css">
+    </head>
+    <body>
+        <%- include('../partials/header') %>
+        <div class="support">
+            <div class="carouselles">
+                <div id="slider">
+                <% games.forEach(game => { %>
+                    <div class="slide" >
+                        <a href="/jeux/<%= game.id %>">
+                            <p id="promo" data-franchise="<%= game.promo %>" >-<%= game.promo %>%</p>
+                            <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>" id="game_img" data-franchise="<%= game.img %>">
+                            
+                        </a>
+                        <div class="info">
+                            <p id="name" data-franchise="<%= game.name %>" data-id="<%= game.id %>"><%= game.name %></p>
+                            
+                        </div>
+                        
+                    </div>
+                <% }); %>
+                
+                </div>
+                <div class="arrow prev" onclick="prevSlide()">&#10094;</div>
+                <div class="arrow next" onclick="nextSlide()">&#10095;</div>
+                <div class="dots"></div>
+            </div>
+        </div>
+        
+        <main>
+            <section id="trends" class="trends">
+                
+                <div class="games">
+                    <% games.forEach(game => { %>
+                        <div class="game">
+                            <a href="/jeux/<%= game.id %>">
+                                <img src="/assets/img/<%= game.img %>" alt="<%= game.name %>">
+                            </a>
+                            <div class="game-info">
+                                <span class="discount">-<%= game.promo %>%</span>
+                                <span class="title"><%= game.name %></span>
+                                <span class="price"><%= game.prix %>€</span>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+            </section>
+        </main>
+        <%- include('../partials/footer') %>
+        
+        <script src="/assets/js/accueil.js" async defer></script>
+        
+    </body>
+</html>
